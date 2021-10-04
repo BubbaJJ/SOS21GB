@@ -336,9 +336,7 @@ namespace Vecka1
             Console.WriteLine("Fahrenheit: " + fahrenheit15);
 
             Console.Write("Solution 2: ");
-            Console.WriteLine("Fahrenheit: " + (celsius15 * 18 / 10 + 32));
-
-           
+            Console.WriteLine("Fahrenheit: " + (celsius15 * 18 / 10 + 32));          
         }
     }
 }
