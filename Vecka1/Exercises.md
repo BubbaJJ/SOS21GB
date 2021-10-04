@@ -65,5 +65,5 @@
 
 ### 15.
 #### Ta in 1 tal. (Grader i celsius)
-##### Konvertera till Fahrenheit och skriv ut resultatet.
-##### _celcius * 18 / 10 + 32_
+Konvertera till Fahrenheit och skriv ut resultatet.
+_celcius * 18 / 10 + 32_
