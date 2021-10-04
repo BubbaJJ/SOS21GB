@@ -62,13 +62,6 @@
 #### Ta in 1 tal. (0-9)
 #### Skriv ut en rektangel, 3 kolumner och 5 rader, med hjälp av talet.
 
-##### Förväntat resultat.
-555
-5 5
-5 5
-5 5
-555
-
 
 ### 15
 #### Ta in 1 tal. (Grader i celsius)
