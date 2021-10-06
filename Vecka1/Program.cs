@@ -6,7 +6,8 @@ namespace Vecka1
     {
         static void Main(string[] args)
         {
-            Monday.Exercises();
+            //Monday.Exercises();
+            Wednesday.Demo();
         }
     }
 }

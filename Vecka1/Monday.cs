@@ -329,14 +329,20 @@ namespace Vecka1
             Console.WriteLine("15. Celsius to Fahrenheit");
             Console.Write("Enter your first number: ");
             int celsius15 = Convert.ToInt32(Console.ReadLine());
-            int fahrenheit15 = celsius15 * 18 / 10 + 32;
             Console.WriteLine();    // Tom rad för struktur.
 
             Console.Write("Solution 1: ");
+            int fahrenheit15 = celsius15 * 18 / 10 + 32;
             Console.WriteLine("Fahrenheit: " + fahrenheit15);
 
             Console.Write("Solution 2: ");
-            Console.WriteLine("Fahrenheit: " + (celsius15 * 18 / 10 + 32));          
+            Console.WriteLine("Fahrenheit: {0}", fahrenheit15);
+
+            Console.Write("Solution 3: ");
+            Console.WriteLine("Fahrenheit: " + (celsius15 * 18 / 10 + 32));
+
+            Console.Write("Solution 4: ");
+            Console.WriteLine("Fahrenheit: {0}", (celsius15 * 18 / 10 + 32));
         }
     }
 }
