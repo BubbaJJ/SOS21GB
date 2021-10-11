@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vecka1
+namespace Vecka1.InputOutput
 {
-    static class InputOutput
+    class InputOutput
     {
         public static void Examples()
         {
@@ -27,7 +27,6 @@ namespace Vecka1
 
             // Läser in, och tilldelar, en textsträng
             string name = Console.ReadLine();
-
 
             // Konverterar en variabel till int; om möjligt.
             Convert.ToInt32(name);

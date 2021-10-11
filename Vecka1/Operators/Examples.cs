@@ -1,7 +1,7 @@
 ﻿using System;
-namespace Vecka1
+namespace Vecka1.Operators
 {
-    public class Operators
+    class Operators
     {
         public static void Examples()
         {
