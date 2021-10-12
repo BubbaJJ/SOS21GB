@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="While\" />
+    <None Remove="Arrats\" />
+    <None Remove="WhileDoWhile\" />
+    <None Remove="Lists\" />
+    <None Remove="For\" />
+    <None Remove="ForEach\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Arrays\" />
+    <Folder Include="WhileDoWhile\" />
+    <Folder Include="Lists\" />
+    <Folder Include="For\" />
+    <Folder Include="ForEach\" />
+  </ItemGroup>
+</Project>
