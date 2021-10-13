@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -21,3 +22,30 @@
     <Folder Include="ForEach\" />
   </ItemGroup>
 </Project>
+=======
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="While\" />
+    <None Remove="Arrats\" />
+    <None Remove="WhileDoWhile\" />
+    <None Remove="Lists\" />
+    <None Remove="For\" />
+    <None Remove="ForEach\" />
+    <None Remove="RandomGenerator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Arrays\" />
+    <Folder Include="WhileDoWhile\" />
+    <Folder Include="Lists\" />
+    <Folder Include="For\" />
+    <Folder Include="ForEach\" />
+    <Folder Include="RandomGenerator\" />
+  </ItemGroup>
+</Project>
+>>>>>>> Stashed changes
