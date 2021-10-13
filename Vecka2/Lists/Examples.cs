@@ -35,9 +35,13 @@ namespace Vecka2.Lists
             string word = "Handelsakademin SOS21";
 
             List<char> charWord = new List<char>();
-            charWord.AddRange(word);
 
-            Console.WriteLine(charWord);
+            charWord.AddRange(word); // Lägger till textsträngen i listan charWord. Konverterar automatiskt.
+
+            foreach (char c in charWord)
+            {
+                Console.WriteLine(c);
+            }
 
             // Lägg till element. - Adderas i slutet av listan.
             firstList.Add(1);
