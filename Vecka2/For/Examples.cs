@@ -19,7 +19,6 @@ namespace Vecka2.For
 
 
                 Exempel:
-
                 int rows = 3;
 
                 for (int i = 0; i < rows; i++)
