@@ -16,6 +16,48 @@ namespace Vecka2.For
                 {
                     Do something...
                 }
+
+
+                Exempel:
+
+                int rows = 3;
+
+                for (int i = 0; i < rows; i++)
+                {
+                    Console.WriteLine(i);
+                }
+
+                Vart börjar vi?
+                startvärde = 0 (int i = 0)
+
+                Vad måste vara sant?
+                Villkor (i < rows)
+
+                Hur mycket ska vi öka varje gång?
+                Iteration/Ökning (i++)
+
+                // Omgång 1:
+                    i = 0;              // Startvärde
+                    i < rows == 0 < 3   // Villkor (Är i mindre än rows?)
+                    Kör koden
+                    i++ (i = 0 + 1)     // Ökning
+
+                // Omgång 2:
+                    i = 1;              // Startvärde
+                    i < rows == 1 < 3   // Villkor (Är i mindre än rows?)
+                    Kör koden
+                    i++ (i = 1 + 1)     // Ökning
+
+                // Omgång 3:
+                    i = 2; // Startvärde
+                    i < rows == 2 < 3   // Villkor (Är i mindre än rows?)
+                    Kör koden
+                    i++ (i = 2 + 1)     // Ökning
+
+                // Omgång 4
+                    i = 3;              // Startvärde
+                    i < rows == 3 < 3   // Villkor
+                    Avslutar loopen
             */
 
             for (int i = 0; i < 10; i++)        // Börjar på 0, avslutas på 9. Ökar med 1 för varje iteration.
