@@ -5,123 +5,209 @@ namespace Vecka3
 {
     class Program
     {
+        enum veckodagar
+        {
+            Måndag = 1, // 1
+            Tisdag = 2, // 2
+            Onsdag = 3, // 3
+            Torsdag = 4,// 4
+            Fredag = 5, // 5
+            Lördag = 6, // 6
+            Söndag = 7  // 7
+        }
+
         static void Main(string[] args)
         {
-
-            List<string> education = new List<string>() { "utveckling", "Objekt", "orienterad", " ", "System" };
-
-            for (int i = 0; i < education.Count-1; i++){
-                education.Reverse(i, 2);
-            }
-
-            foreach (string name in education)
-            {
-                Console.Write(name);
-            }
-
             /*
-                Syntax:
-                returtyp MetodNamn(ev. indata)
+            // Switch
+            int dag = 4;
+
+            switch (dag)
+            {
+                case 1: // dag == 1
+                    Console.WriteLine(veckodagar.Måndag);
+                    break;
+                case 2: // dag == 2
+                    Console.WriteLine(veckodagar.Tisdag);
+                    break;
+                case 3: // dag == 3
+                    Console.WriteLine(veckodagar.Onsdag);
+                    break;
+                case 4: // dag == 4
+                case 5: // dag == 5
+                    Console.WriteLine(veckodagar.Torsdag);
+                    break;
+                case 6: // dag == 6
+                    Console.WriteLine("Lördag");
+                    break;
+                case 7: // dag == 7
+                    Console.WriteLine("Söndag");
+                    break;
+                default: // Inget matchar.
+                    Console.WriteLine("Fel input.");
+                    break;
+            }
+            /*
+            int result = 4;
+
+            // 0-2 IG
+            // 3-5 G
+            // 6-8 VG
+            // 9-10 MVG
+
+            switch (result)
+            {
+                case 0:
+                case 1:
+                case 2:
+                    Console.WriteLine("IG");
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    Console.WriteLine("G");
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    Console.WriteLine("VG");
+                    break;
+                case 9:
+                case 10:
+                    Console.WriteLine("MVG");
+                    break;
+                default:
+                    break;
+            }
+            */
+            /*
+            // Dictionary
+            Dictionary<int, string> weekdays = new Dictionary<int, string>() { {1, "Måndag" },{2, "Tisdag" },{3, "Onsdag" }, { 4, "Torsdag" } };
+
+            Console.WriteLine(weekdays[1]);
+            
+            weekdays.Add(5, "Fredag");
+            weekdays.Add(6, "Lördag");
+            weekdays.Add(7, "Söndag");
+
+            Console.WriteLine(weekdays[7]);
+
+            weekdays.Remove(3);
+
+            Console.WriteLine(Enum.GetName(typeof(veckodagar), 4));
+
+            foreach (string s in Enum.GetNames(typeof(veckodagar)))
+            {
+                Console.WriteLine(s);
+            }
+            Enum.GetNames(typeof(veckodagar));
+
+            weekdays[1] = "Fredag";
+            Console.WriteLine(weekdays[1]);
+            foreach (KeyValuePair<int, string> item in weekdays)
+            {
+                Console.WriteLine("K: {0} V: {1}",item.Key, item.Value);
+            }*/
+
+
+            // While
+            /*
+            string[,] info = new string[3,4];
+
+            int rows = info.GetLength(0);
+            int cols = info.GetLength(1);
+            int i = 0;
+
+
+            while (i<rows)
+            {
+                int j = 0;
+                while (j<cols)
                 {
-                    Do something...
+                    info[i, j] = "test";
+                    j++;
                 }
-            
-            */
-            /*
-            void PrintSomething()
-            {
-                Console.WriteLine("Something");
+                i++;
             }
-
-            PrintSomething();
-            */
-            /*
-            string firstName = "Elham";
-            string name = "Jim";
-
-            void PrintSomethingInput(string name)
+            while (i < rows)
             {
-                Console.WriteLine("My name is {0}",name);
-            }
-
-            PrintSomethingInput(firstName);
-            */
-            /*
-            int AddSum(int tal1, int tal2)
-            {
-                int result = tal1 + tal2;
-                return result;
-            }
-
-            Console.WriteLine(AddSum(1,2));
-
-            int sum = AddSum(2,3);
-
-            Console.WriteLine(sum);
-
-            int GetAge()
-            {
-                int age = 30;
-                return age;
-            }
-
-            Console.WriteLine(GetAge());
-            int userAge = GetAge();
-            
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
-            */
-            /*
-            Greeting();
-
-            void Greeting()
-            {
-                Console.Write("Enter your name: ");
-                string userName = Console.ReadLine();
-                Console.WriteLine("Welcome, {0}", userName);
-            }
-            */
-
-
-            /*
-            string name = "Elham"; // Name är Elham
-
-            string ChangeName(string firstName) // firstName är Elham
-            {
-                firstName = "123"; // Skriver över Elham, ersätter med 123.
-                return firstName; // Returnernar 123.
-            }
-
-            name = ChangeName(name); // Skriver över Elham med 123.
-            */
-            /*
-            bool evenNumber = false;
-            int tal1 = 234234;
-
-            bool OddOrEven(int num)
-            {
-                if (num % 2 == 0)
+                int j = 0;
+                while (j < cols)
                 {
-                    return true;
+                    Console.WriteLine(info[i, j]); 
+                    j++;
+                }
+                i++;
+            }
+            */
+            /*
+            Random rnd = new Random();
+
+            int correctNumber = rnd.Next(1,11);
+            int guess;
+
+
+            while (true)
+            {
+                Console.Write("Enter a number: ");
+                guess = Convert.ToInt32(Console.ReadLine());
+
+                if (correctNumber == guess)
+                {
+                    Console.WriteLine("Rätt tal!");
+                    break;
                 }
                 else
                 {
-                    return false;
+                    Console.WriteLine("Fel! Försök igen.");
                 }
             }
             */
             /*
-            void PrintNumbers(int num, int exp)
-            {
-                for(int i = 1; i < exp; i++)
-                {
-                    num *= i;
-                    Console.WriteLine(num);
-                }
-            }
-            PrintNumbers(23, 4);
-            */
+            int number = 4;
+            int i = 0;
 
+            while (i <= 10)
+            {
+                Console.WriteLine("{0} * {1} = {2}", number, i, number*i);
+                i++;
+            }
+            */
+            /*
+            int memory = 0;
+            int value = 0;
+
+            while (value>=0)
+            {
+                value = Convert.ToInt32(Console.ReadLine());
+                memory += value;
+            }
+
+            Console.WriteLine(memory);
+            */
+            /*
+            string[,] countries = new string[,] { { "Sverige", "Stockholm" }, { "Norge", "Oslo" }, { "Tyskland", "Berlin" } };
+            string[] cities = new string[] { "Stockholm", "Oslo" };
+            int i = 0;
+            int rows = countries.GetLength(0);
+            string answer;
+
+            while (i < rows)
+            {
+                Console.WriteLine("Vad heter huvudstaden i {0}: ", countries[i, 0]);
+                answer = Console.ReadLine();
+
+                if (answer == cities[i])
+                {
+                    Console.WriteLine("Rätt svar!");
+                }
+                else
+                {
+                    Console.WriteLine("Fel svar.");
+                }
+                i++;
+            }
+            */
         }
     }
 }
