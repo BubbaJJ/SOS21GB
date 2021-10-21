@@ -8,13 +8,13 @@
   <ItemGroup>
     <None Remove="Methods\" />
     <None Remove="Switch\" />
-    <None Remove="Enum\" />
     <None Remove="Dictionary\" />
+    <None Remove="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Methods\" />
     <Folder Include="Switch\" />
-    <Folder Include="Enum\" />
     <Folder Include="Dictionary\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
 </Project>
