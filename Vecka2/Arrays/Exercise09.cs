@@ -1,21 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Vecka2.Arrays
 {
-    static class Exercise05
+    static class Exercise09
     {
         public static void Solution()
         {
-            Console.WriteLine("\nÖvning 5:");
+            Console.WriteLine("\nÖvning 9:");
 
-            // Skapa en array med alla månader.
-            string[] months = new string[] { "Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli","Augusti", "September", "Oktober", "November", "December" };
+            // Skapa en lista med alla månader.
+            List<string> months = new List<string>() { "Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December" };
 
             // Låt användaren välja en månad, 1-12.
             Console.Write("Välj månad: [1-12]");
 
             // Konvertera inmatningen från användaren.
             int selection = Convert.ToInt32(Console.ReadLine());
-
 
             // Skriv ut rätt månad baserat på användarens val.
             if (selection == 1)

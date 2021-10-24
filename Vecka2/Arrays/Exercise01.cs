@@ -5,8 +5,10 @@ namespace Vecka2.Arrays
     {
         public static void Solution()
         {
+            Console.WriteLine("\nÖvning 1:");
+
             // Skapa en array med textsträngar, lagra 3 värden.
-            string[] names = new string[] {"Jim","Leo","Arasto" };
+            string[] names = new string[] { "Jim", "Leo", "Arasto" };
 
             // Skriv ut samtliga textsträngar, använd index.
             Console.WriteLine(names[0]);

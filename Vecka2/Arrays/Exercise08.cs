@@ -1,14 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Vecka2.Arrays
 {
-    static class Exercise04
+    static class Exercise08
     {
         public static void Solution()
         {
-            Console.WriteLine("\nÖvning 4:");
+            Console.WriteLine("\nÖvning 8:");
 
-            // Skapa en array med alla veckodagar.
-            string[] weekdays = new string[] { "Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag","Söndag" };
+            // Skapa en lista med alla veckodagar.
+            List<string> weekdays = new List<string>() { "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag" };
 
             // Låt användaren välja veckodag, 1-7.
             Console.Write("Välj veckodag: [1-7]");
@@ -21,7 +23,7 @@ namespace Vecka2.Arrays
             {
                 Console.WriteLine(weekdays[0]);
             }
-            else if(selection == 2)
+            else if (selection == 2)
             {
                 Console.WriteLine(weekdays[1]);
             }
