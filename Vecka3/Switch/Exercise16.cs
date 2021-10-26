@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Vecka3.Switch
 {
-    static class Exercise15
+    static class Exercise16
     {
         public static void SolutionFor()
         {
@@ -11,10 +11,14 @@ namespace Vecka3.Switch
 
             Dictionary<string, int> weekdaysSwapped = new Dictionary<string, int>();
 
+            Console.WriteLine(weekdays.Count);
+
             for (int i = 1; i <= weekdays.Count; i++)
             {
                 weekdaysSwapped.Add(weekdays[i], i);
+                weekdays.Remove(i);
             }
+            Console.WriteLine(weekdays.Count);
 
             foreach (KeyValuePair<string, int> item in weekdaysSwapped)
             {

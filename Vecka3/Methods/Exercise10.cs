@@ -1,10 +1,12 @@
 ﻿using System;
 namespace Vecka3.Methods
 {
-    public class Exercise10
+    static class Exercise10
     {
-        public Exercise10()
+        public static void RectangleArea(int b, int h)
         {
+            int area = b * h;
+            Console.WriteLine("Area of the rectangle is {0}", area);
         }
     }
 }

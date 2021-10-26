@@ -1,10 +1,11 @@
 ﻿using System;
 namespace Vecka3.Methods
 {
-    public class Exercise01
+    static class Exercise01
     {
-        public Exercise01()
+        public static void Greeting()
         {
+            Console.WriteLine("Hello, dear user!");
         }
     }
 }
