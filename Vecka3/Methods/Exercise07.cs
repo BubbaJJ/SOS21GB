@@ -11,5 +11,10 @@ namespace Vecka3.Methods
             }
             return false;
         }
+
+        public static bool EvenNumbersSimplified(int num1, int num2)
+        {
+            return num1 == num2;
+        }
     }
 }

@@ -5,11 +5,11 @@ namespace Vecka3.Methods
     {
         public static int AddSum(int num1, int num2)
         {
-            // alt 1
-            // int result = num1 + num2;
-            // return result;
-
-            // alt 2
+            int result = num1 + num2;
+            return result;
+        }
+        public static int AddSumSimplified(int num1, int num2)
+        {
             return num1 + num2;
         }
     }

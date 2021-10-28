@@ -11,5 +11,10 @@ namespace Vecka3.Methods
             }
             return false;
         }
+
+        public static bool OddOrEvenSimplified(int number)
+        {
+            return number % 2 == 0;
+        }
     }
 }
