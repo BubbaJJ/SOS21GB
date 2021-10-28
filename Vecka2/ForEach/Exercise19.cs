@@ -26,7 +26,7 @@ namespace Vecka2.ForEach
                         if (nameList[i] == vowels[j])
                         {
                             cons = false;
-                            break; ;
+                            break;
                         }
                     }
                     if (cons)

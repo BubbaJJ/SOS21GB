@@ -7,7 +7,8 @@ namespace Vecka2.WhileDoWhile
     {
         public static void Solution()
         {
-            bool runProgram = true;
+            bool winner = false;
+            int correctLetters = 0;
             char c;
             List<char> guessedChars = new List<char>();
 
@@ -22,8 +23,7 @@ namespace Vecka2.WhileDoWhile
             List<char> wordList = new List<char>();
             wordList.AddRange(word);
 
-
-            while (runProgram)
+            while (!winner)
             {
                 foreach (char ch in partialWord)
                 {
@@ -35,6 +35,8 @@ namespace Vecka2.WhileDoWhile
                     c = Convert.ToChar(Console.ReadLine());
                 } while (guessedChars.Contains(c));
 
+                guessedChars.Add(c);
+
                 if (wordList.Contains(c))
                 {
                     Console.WriteLine("Correct guess! {0} is in the word.",c);
@@ -43,13 +45,19 @@ namespace Vecka2.WhileDoWhile
                         if (word[i] == c)
                         {
                             partialWord[i] = c;
+                            correctLetters++;
+                        }
+                        if(correctLetters == word.Length)
+                        {
+                            Console.WriteLine("Congrats! You guessed the word!");
+                            winner = true;
+                            break;
                         }
                     }
                 }
                 else
                 {
                     Console.WriteLine("Sorry, {0} is not in the word.",c);
-                    guessedChars.Add(c);
                 }
             }
         }

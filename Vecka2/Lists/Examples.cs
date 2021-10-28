@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Vecka2.Lists
+namespace Vecka2.List
 {
     class Lists
     {
