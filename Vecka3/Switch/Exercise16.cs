@@ -13,7 +13,7 @@ namespace Vecka3.Switch
 
             Console.WriteLine(weekdays.Count);
 
-            for (int i = 1; i <= weekdays.Count; i++)
+            for (int i = weekdays.Count; i > 0; i--)
             {
                 weekdaysSwapped.Add(weekdays[i], i);
                 weekdays.Remove(i);

@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vecka1", "Vecka1\Vecka1.csproj", "{94446971-0AB3-47EE-804D-CA9FA60186CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka1", "Vecka1\Vecka1.csproj", "{94446971-0AB3-47EE-804D-CA9FA60186CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vecka2", "Vecka2\Vecka2.csproj", "{BBC429AF-E2AA-4125-BA40-140D2FAE62B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka2", "Vecka2\Vecka2.csproj", "{BBC429AF-E2AA-4125-BA40-140D2FAE62B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vecka3", "Vecka3\Vecka3.csproj", "{F50A649E-C5E4-41E6-884B-7B58EE4E7441}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka3", "Vecka3\Vecka3.csproj", "{F50A649E-C5E4-41E6-884B-7B58EE4E7441}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vecka4", "Vecka4\Vecka4.csproj", "{30095DB2-0BEB-4BAF-B3D6-04B3CD44E2FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka4", "Vecka4\Vecka4.csproj", "{30095DB2-0BEB-4BAF-B3D6-04B3CD44E2FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vecka5", "Vecka5\Vecka5.csproj", "{F7A37EDA-ED5F-46D9-B9EE-84824665D29C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka5", "Vecka5\Vecka5.csproj", "{F7A37EDA-ED5F-46D9-B9EE-84824665D29C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC5B4AD3-C3F0-462F-BD1E-6E437C4E8A65}"
+	ProjectSection(SolutionItems) = preProject
+		NamingConventions.md = NamingConventions.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
