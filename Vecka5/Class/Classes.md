@@ -15,10 +15,13 @@ public class Person
 _Privata variabler inleds med_ _ <br>
 _Publika variabler inleds med stor bokstav._<br>
 <ins>_Undvik publika variabler._</ins>
+
+_Om ingen accessModifier skriv innan datatypen blir det private._
 ###### Syntax:
 >_accessModifier datatyp namn;_<br>
 ```csharp
 private int _age;
+public int Age;
 ```
 
 ##
