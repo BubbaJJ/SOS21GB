@@ -15,10 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka5", "Vecka5\Vecka5.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC5B4AD3-C3F0-462F-BD1E-6E437C4E8A65}"
 	ProjectSection(SolutionItems) = preProject
+		Naming.md = Naming.md
 		NamingConventions.md = NamingConventions.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vecka6", "Vecka6\Vecka6.csproj", "{07329000-398A-495D-8CA8-9BE32EB69F5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka6", "Vecka6\Vecka6.csproj", "{07329000-398A-495D-8CA8-9BE32EB69F5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
