@@ -27,8 +27,8 @@
 ---
 ### Sammanfattning
 
-|Typ|Case|Underscore|
----|---|---
+|Typ    |Case   |Underscore |
+|---     |---    |---        |
 |Namespace|PascalCase|Nej|
 |Klass|PascalCase|Nej|
 |Property|PascalCase|Nej|
