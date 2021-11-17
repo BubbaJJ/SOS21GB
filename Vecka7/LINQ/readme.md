@@ -294,6 +294,72 @@ Age: 34 Name: Alexis Flach<br>
 
 #
 
+## GroupBy
+Grupperar element baserat på ett angivet villkor.
+
+```csharp
+List<Student> students = new List<Student>()
+{
+    new Student(firstName: "Jim", lastName: "Kaya", age: 32),
+    new Student(firstName: "Arasto", lastName: "Sahbaei", age: 28),
+    new Student(firstName: "Alexis", lastName: "Flach", age: 34),
+    new Student(firstName: "Leo", lastName: "Möller", age: 34),
+    new Student(firstName: "Carl", lastName: "Jendle", age: 26),
+};
+
+// Sorterar baserat på efternamn, grupperar därefter baserat på ålder.
+var studentsByAge = students.OrderBy(x => x.lastName).GroupBy(x => x.age);
+
+// Loopar igenom varje gruppering som skapats.
+foreach (var group in studentsByAge)
+{
+    // Skriver ut värdet objekten grupperats på.
+    Console.WriteLine(group.Key);
+
+    // Loopar igenom varje objekt i aktuell gruppering.
+    foreach (Student s in group)
+    {
+        Console.WriteLine("Age: {0} Name: {1} {2}", s.age, s.firstName, s.lastName);
+    }
+}
+```
+
+**Output:**<br>
+34<br>
+Age: 34 Name: Alexis Flach<br>
+Age: 34 Name: Leo Möller<br>
+26<br>
+Age: 26 Name: Carl Jendle<br>
+32<br>
+Age: 32 Name: Jim Kaya<br>
+28<br>
+Age: 28 Name: Arasto Sahbaei<br>
+
+#
+
+## Any
+Returnerar en boolean som anger om något element i en samling av data uppfyller ett angivet villkor.
+
+```csharp
+List<Student> students = new List<Student>()
+{
+    new Student(firstName: "Jim", lastName: "Kaya", age: 32),
+    new Student(firstName: "Arasto", lastName: "Sahbaei", age: 28),
+    new Student(firstName: "Alexis", lastName: "Flach", age: 34),
+    new Student(firstName: "Leo", lastName: "Möller", age: 35),
+    new Student(firstName: "Carl", lastName: "Jendle", age: 26),
+};
+
+var studentsOver30 = students.Where(x => x.age > 30).Any();
+
+Console.WriteLine(studentsOver30);
+```
+
+**Output:**<br>
+True
+
+#
+
 ## Take
 Returnerar ett angivet antal element i början av en samling
 
