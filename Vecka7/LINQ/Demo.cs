@@ -174,10 +174,7 @@ namespace Vecka7.LINQ
             // Any
             Console.WriteLine("\nLINQ - Any");
             bool resAny = students.Where(name => name.age > 30).Any();
-            Console.WriteLine(resAny); udent s in studentsByAge)
-            {
-                Console.WriteLine("Age: {0} Name: {1} {2}", s.age, s.firstName, s.lastName);
-            }
+            Console.WriteLine(resAny);
         }
     }
 }
