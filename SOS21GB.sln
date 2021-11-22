@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka6", "Vecka6\Vecka6.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka7", "Vecka7\Vecka7.csproj", "{732AA045-65AC-4C53-B4EB-A9886385AD7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vecka8", "Vecka8\Vecka8.csproj", "{136F5782-DB59-4BDD-85E2-FED79F3CFB76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vecka8", "Vecka8\Vecka8.csproj", "{136F5782-DB59-4BDD-85E2-FED79F3CFB76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vecka9", "Vecka9\Vecka9.csproj", "{7369565C-A730-4D8C-A51E-1308B2A6C8AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{136F5782-DB59-4BDD-85E2-FED79F3CFB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{136F5782-DB59-4BDD-85E2-FED79F3CFB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{136F5782-DB59-4BDD-85E2-FED79F3CFB76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7369565C-A730-4D8C-A51E-1308B2A6C8AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7369565C-A730-4D8C-A51E-1308B2A6C8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7369565C-A730-4D8C-A51E-1308B2A6C8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7369565C-A730-4D8C-A51E-1308B2A6C8AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
