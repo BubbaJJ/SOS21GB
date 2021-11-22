@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Vecka5.Class
 {
@@ -30,10 +31,13 @@ namespace Vecka5.Class
         {
         }
 
+        private List<Dog> dogs = new List<Dog>();
+
         public Dog(string name, string breed)
         {
             this._name = name;      // this = detta objektet.
             this._breed = breed;    // this = detta objektet.
+            dogs.Add(this);
         }
 
         #endregion Public Constructors
