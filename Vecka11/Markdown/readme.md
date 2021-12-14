@@ -66,8 +66,8 @@ ___Fet & Kursiv stil___
 # Bilder
 
 ![Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
-![Jim](Bild3.jpg "Jim")
-![Leo](Bild2.jpg)
+![Jim](../Bild3.jpg "Jim")
+![Leo](../Bild2.jpg)
 
 ---
 
